@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 const CopyClicker = (props) => {
-    const { initialCopies, initialCpC } = props
+    const { copies, CpC } = props
 
     const onCopyClicked = () => {
         // ToDo: write some code
@@ -38,8 +38,8 @@ const CopyClicker = (props) => {
 }
 
 CopyClicker.propTypes = {
-    initialCopies: PropTypes.number.isRequired,
-    initialCpC: PropTypes.number.isRequired,
+    copies: PropTypes.number.isRequired,
+    CpC: PropTypes.number.isRequired,
 }
 
 export default CopyClicker
