@@ -1,6 +1,20 @@
 import React from 'react'
+import { createStore } from 'redux'
 import './App.css'
 import CopyClicker from './components/CopyClicker'
+
+const initialState = {
+    copies: 0,
+}
+
+function reducer(state = initialState, action) {
+    console.log('I\'m inside your reducer')
+    return state
+}
+
+const store = createStore(reducer)
+
+console.log('Our current state: ', store.getState())
 
 function App() {
     return (
@@ -9,10 +23,7 @@ function App() {
                 Copy Clicker
             </header>
 
-            <CopyClicker
-                initialCopies={0}
-                initialCpC={1}
-            />
+            <CopyClicker copies={0} CpC={1} />
         </div>
     )
 }
