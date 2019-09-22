@@ -24,7 +24,7 @@
     "no-plusplus": ["error", {"allowForLoopAfterthoughts": true}],
     "no-use-before-define": ["error", { "variables": false }],
     "quotes": ["error", "single"],
-    "react/forbid-prop-types": [false],
+    "react/forbid-prop-types": [0],
     "react/jsx-filename-extension": [1, {
       "extensions": [
         ".jsx"
