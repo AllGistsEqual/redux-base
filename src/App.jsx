@@ -8,13 +8,15 @@ const initialState = {
 }
 
 function reducer(state = initialState, action) {
-    console.log('I\'m inside your reducer')
+    console.log('reducer action: ', action)
     return state
 }
 
 const store = createStore(reducer)
 
 console.log('Our current state: ', store.getState())
+
+store.dispatch({ type: 'COPY_CLICK' })
 
 function App() {
     return (
