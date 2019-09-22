@@ -3,19 +3,13 @@ import PropTypes from 'prop-types'
 
 const CopyClicker = (props) => {
     const { initialCopies, initialCpC } = props
-    const [copies, setCopies] = useState(initialCopies)
-    const [CpC, setCpC] = useState(initialCpC)
 
     const onCopyClicked = () => {
-        setCopies(copies + CpC)
+        // ToDo: write some code
     }
 
     const onImproveCopy = () => {
-        const cost = CpC * CpC + 1
-        if (copies >= cost) {
-            setCopies(copies - cost)
-            setCpC(CpC + 1)
-        }
+        // ToDo: write some code
     }
 
     return (
