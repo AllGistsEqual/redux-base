@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
 
 const CopyClicker = (props) => {
     const { copies, CpC } = props
@@ -42,4 +43,8 @@ CopyClicker.propTypes = {
     CpC: PropTypes.number.isRequired,
 }
 
-export default CopyClicker
+const mapStateToProps = (state) => ({
+    copies: state.copies,
+})
+
+export default connect(mapStateToProps)(CopyClicker)

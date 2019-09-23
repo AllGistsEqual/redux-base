@@ -1,5 +1,6 @@
 import React from 'react'
 import { createStore } from 'redux'
+import { Provider } from 'react-redux'
 import './App.css'
 import CopyClicker from './components/CopyClicker'
 
@@ -30,13 +31,15 @@ console.log('Our new state: ', store.getState())
 
 function App() {
     return (
+        <Provider store={store}>
         <div className="App">
             <header className="App-header">
                 Copy Clicker
             </header>
 
-            <CopyClicker copies={0} CpC={1} />
+            <CopyClicker CpC={1} />
         </div>
+        </Provider>
     )
 }
 
