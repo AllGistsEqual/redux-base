@@ -23,12 +23,6 @@ function reducer(state = initialState, action) {
 
 const store = createStore(reducer)
 
-console.log('Our current state: ', store.getState())
-
-store.dispatch({ type: 'COPY_CLICK' })
-
-console.log('Our new state: ', store.getState())
-
 function App() {
     return (
         <Provider store={store}>
