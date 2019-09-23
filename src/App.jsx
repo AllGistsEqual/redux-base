@@ -32,13 +32,13 @@ console.log('Our new state: ', store.getState())
 function App() {
     return (
         <Provider store={store}>
-        <div className="App">
-            <header className="App-header">
-                Copy Clicker
-            </header>
+            <div className="App">
+                <header className="App-header">
+                    Copy Clicker
+                </header>
 
-            <CopyClicker CpC={1} />
-        </div>
+                <CopyClicker CpC={1} />
+            </div>
         </Provider>
     )
 }
